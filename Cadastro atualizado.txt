@@ -1,0 +1,84 @@
+htmlHTML
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+       <title>ALG CADASTRO</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="cadastro.css" />
+    </head>
+<body>
+    <div class="itens cadastro">
+        <form>
+            <h1> Cadastre-se aqui:</h1>
+            <hr>
+            <div class="dados">
+            <input type ="text" name="nome" id="nome" placeholder=" Nome..." required/>
+            <input type ="tex" name="telefone" id="telefone" placeholder="Telefone..." required/>
+            <input type="email" name="email" id="email " placeholder="E-mail..." required/>
+            <input type="password" name="senha" id="senha" placeholder="Senha..." required/>
+            <input type="password" name="confirm_senha" id="confirm_senha" placeholder="Confirme sua senha" required/>
+            </div>
+            <div class ="opçoes">
+            <span style="font-size:18px";></span><br>
+                <input type="radio" name="PF" value="PF">Pessoa Fisica
+                <input type="radio" name="PJ" value="PJ">Pessoa Juridica
+                <input type="submit" value="Enviar">
+                <input type="checkbox"> Eu aceito os termos e condiçoes
+            </div>         
+        </form>
+    </div>
+</body>
+</html>
+..............................................................................................................................................
+..............................................................................................................................................
+CSS
+body{
+    background:url(te.jpg); /* adicionar imagem no fundo */
+    background-size:contain;/* size ajusta o tamanhod a imagem|
+                              cover redimenciona para que não hja espaços em branco 
+                              e mantem as proporçoes originais*/
+    
+}
+.itens{
+border-radius: 5px;  /* arredondar as bordas */
+background: steelblue;  /* adicionar cor ao fundo */
+padding: 20px;  /* espaçamento interno*/
+width: 420px;  /* largura */
+margin: auto;  /*espaçamento externo*/
+color: #fff;  /* cor*/
+font-size: 16px;  /* define o tamanho de uma fonte*/
+font-family: Verdana;/*define o estilo da fonte*/
+margin-top: 100px;/* espaçamento superior*/
+opacity: 0.8;
+}
+.itens h1{ 
+    text-align:center;  /*alinhamento do texto*/
+    margin: 0;/*espaçamento externo*/
+    padding: 0; /* espaçamento interno*/
+}
+.itens input {
+    text-align:center;
+padding: 12px 20px; /* espaçamento interno*/
+margin: 8px 0;/*espaçamento externo*/
+display: inline-block;
+border:1px solid rgb(122, 173, 207);
+border-radius: 4px;
+box-sizing: border-box;
+font-size: 18px;
+background:rgb(178, 203, 212);
+color:rgb(2, 2, 48);
+opacity: 0,9;
+}
+.dados input{text-align:center;
+    width: 100%;
+    
+}
+.itens input[type=submit]{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background:rgb(38, 77, 38);
+    transition: 0.6s/* transição de uma cor para ouutra*/
+}
